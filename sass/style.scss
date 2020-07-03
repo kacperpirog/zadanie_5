@@ -1,6 +1,8 @@
-/*Global*/
-$color-dark: #0097e6;
-$color-yellow: #33d9b2;
+/* Variables */
+
+$color-gold: #ffcc33;
+$color-one: #0097e6;
+$color-two: #33d9b2;
 $color-three: #ff5252;
 $color-four: #2c2c54;
 $color-light: #fff;
@@ -10,14 +12,15 @@ $font-header: 'Signika', sans-serif;
 
 $transition: all 1s;
 
+/* Global */
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 1140px;
-    padding: 30px 20px;
-    margin: 0 auto;	
+
+.section {
+    padding: 96px 0;   
 }
 
 .btn {
@@ -43,33 +46,63 @@ $transition: all 1s;
 }
 
 .btn-one {
-    border-color: $color-light;  
-    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    border-color: $color-gold;  
+    background-image: linear-gradient(90deg, $color-gold 50%, transparent 50%);
 }
 .btn-one:hover {
-    color: $color-one; 
-
+    color: $color-light; 
+}
 /*Navigation*/
+.background_img{
+    height: 100vh;
+    position: relative;
+    background-image: url('http://kacperpirog.pl/wp-content/uploads/2020/07/header.jpg');  
+    height: 500px;
+    display: flex; 
+    text-align: center;  
+    justify-content: center;  
+}
+
 .navigation {
-    background:$color-one;
     padding-top: 12px;
     padding-bottom: 12px;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
     ul {
         padding: 0;
         margin: 0;
-        list-style-type: none;
+        list-style-type: none;  
+         
     }
     a {
         text-decoration: none;
         color: $color-light;
-        font-family: $font-text;
+        font-family: 'Roboto', sans-serif; 
     }
+    h1{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;   
+        color: $color-gold;
+        font-family: 'Galada', cursive;
+    }
+    
 }
-
+.logo {
+    margin: 0;
+}
+.nav  {
+    justify-content: right;
+    right: -30%;
+}
 li {
     display: inline;
     margin-right: 36px;
     position: relative;
+    font-family: 'Roboto', sans-serif;
     :hover {
         color:$color-two;
     }
@@ -88,7 +121,7 @@ li {
 .navigation li:hover ul {
     display:block;
     position: absolute;
-    background: $color-dark;
+    background: $color-light;
 }
 .navigation ul ul a {
     color:#0097e6; 
@@ -111,37 +144,75 @@ li {
     }
 }
 
-
-/* Slider */
-
-.carousel-inner, .carousel-item {
-  height: 100vh;
+/*Header*/
+.splash {
+    height: 100vh;
+    position: relative;   
+    height: 500px;
+    display: flex; 
+    justify-content: center;
 }
 
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
+.splash-inner {
+    margin: auto;
+    width: 50%;
+    height: 50%;
 }
 
-.card img {
-    width: 100%;
-    height: 300px; 
-    object-fit: cover;
+.page-title {
+    margin: auto;
+    font-size: 72px;
+    word-spacing: -10px;
+    width: 700px;
+    line-height: -1.2;
+    color: $color-light;
+    font-family: $font-text;
+        span{
+            font-size: 53px;
+            font-weight: bold;
+        }
 }
 
-.title-img {
-    color: #fff;
+.page-subtitle {
+    color: $color-light;
+    margin: auto;
+    max-width: 700px;
+    font-size: 36px;
+    font-family: $font-header;
 }
 
-.contact {
-    background-color: #eff2f5;
-    
+/*service*/
+
+.container i {
+    font-size: 30px;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
 }
-.contact card {
-    border: none; 
-    
+
+.page-subtitle {
+    color: $color-light;
+    font-size: 18px;
+    margin: 48px 0 0 0;
 }
-.footer {
-    background-color: #d0dbe1;
-    
+
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: $color-main;
+}
+
+.page-title {
+    color: $color-light;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    position: relative;
+    font-family: $font-header;
 }

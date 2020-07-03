@@ -1,32 +1,183 @@
-/* Slider */
-.carousel-inner, .carousel-item {
-  height: 100vh;
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
+.section {
+  padding: 96px 0;
 }
 
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Signika", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  color: #fff;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
 }
 
-.title-img {
+.btn:hover {
+  background-position: 0 100%;
+}
+
+.btn-one {
+  border-color: #ffcc33;
+  background-image: linear-gradient(90deg, #ffcc33 50%, transparent 50%);
+}
+
+.btn-one:hover {
   color: #fff;
 }
 
-.contact {
-  background-color: #eff2f5;
+/*Navigation*/
+.background_img {
+  height: 100vh;
+  position: relative;
+  background-image: url("http://kacperpirog.pl/wp-content/uploads/2020/07/header.jpg");
+  height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-.contact card {
-  border: none;
+.navigation {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  position: absolute;
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
 }
 
-.footer {
-  background-color: #d0dbe1;
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navigation h1 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: #ffcc33;
+  font-family: 'Galada', cursive;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav {
+  -ms-flex-pack: right;
+      justify-content: right;
+  right: -30%;
+}
+
+li {
+  display: inline;
+  margin-right: 36px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+li :hover {
+  color: #33d9b2;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.navigation ul ul {
+  display: none;
+}
+
+.navigation li:hover ul {
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+
+.navigation ul ul a {
+  color: #0097e6;
+}
+
+.navigation ul ul a :hover {
+  color: #33d9b2;
+}
+
+.navigation ul ul {
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 12px;
+  margin-left: 30px;
+}
+
+.navigation ul ul li {
+  display: block;
+  padding: 0 24px;
+}
+
+/*Header*/
+.splash {
+  height: 100vh;
+  position: relative;
+  height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.splash-inner {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.page-title {
+  margin: auto;
+  font-size: 72px;
+  word-spacing: -10px;
+  width: 700px;
+  line-height: -1.2;
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+}
+
+.page-title span {
+  font-size: 53px;
+  font-weight: bold;
+}
+
+.page-subtitle {
+  color: #fff;
+  margin: auto;
+  max-width: 700px;
+  font-size: 36px;
+  font-family: "Signika", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,6 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "bootstrap": "^4.5.0",
     "browser-sync": "^2.26.3",
     "html-validate": "^2.8.0",
     "mkdirp": "^0.5.1",
