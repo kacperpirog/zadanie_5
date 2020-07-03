@@ -1,0 +1,147 @@
+/*Global*/
+$color-dark: #0097e6;
+$color-yellow: #33d9b2;
+$color-three: #ff5252;
+$color-four: #2c2c54;
+$color-light: #fff;
+
+$font-text: 'Inconsolata', monospace;
+$font-header: 'Signika', sans-serif;
+
+$transition: all 1s;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 30px 20px;
+    margin: 0 auto;	
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-header;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    color: $color-light;
+    background-position: 100% 0;
+    background-size: 300%; 
+    transition: $transition;
+}       
+.btn:hover {
+    background-position: 0 100%;  
+}
+
+.btn-one {
+    border-color: $color-light;  
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+.btn-one:hover {
+    color: $color-one; 
+
+/*Navigation*/
+.navigation {
+    background:$color-one;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: $color-light;
+        font-family: $font-text;
+    }
+}
+
+li {
+    display: inline;
+    margin-right: 36px;
+    position: relative;
+    :hover {
+        color:$color-two;
+    }
+}
+.navigation ul ul li {
+    display:block;
+    margin-bottom: 12px;
+}
+.navigation {
+    ul {
+        ul {
+            display:none
+        }
+    }
+}
+.navigation li:hover ul {
+    display:block;
+    position: absolute;
+    background: $color-dark;
+}
+.navigation ul ul a {
+    color:#0097e6; 
+    :hover {
+        color:$color-two;
+    }
+}
+.navigation {
+    ul {
+        ul{
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 12px;
+        margin-left: 30px;
+            li{
+                display: block;
+                padding: 0 24px;
+            }
+        }
+    }
+}
+
+
+/* Slider */
+
+.carousel-inner, .carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+.title-img {
+    color: #fff;
+}
+
+.contact {
+    background-color: #eff2f5;
+    
+}
+.contact card {
+    border: none; 
+    
+}
+.footer {
+    background-color: #d0dbe1;
+    
+}

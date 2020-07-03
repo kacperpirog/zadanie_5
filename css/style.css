@@ -1,0 +1,32 @@
+/* Slider */
+.carousel-inner, .carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.title-img {
+  color: #fff;
+}
+
+.contact {
+  background-color: #eff2f5;
+}
+
+.contact card {
+  border: none;
+}
+
+.footer {
+  background-color: #d0dbe1;
+}
+/*# sourceMappingURL=style.css.map */
