@@ -1,4 +1,10 @@
 /* Variables */
+.img-1 {background-image: url('/images/img-1.jpg');}
+.img-2 {background-image: url('/images/img-2.jpg');}
+.img-3 {background-image: url('/images/img-3.jpg');}
+.img-4 {background-image: url('/images/img-4.jpg');}
+.img-5 {background-image: url('/images/img-5.jpg');}
+.img-6 {background-image: url('/images/img-6.jpg');}
 
 $color-gold: #ffcc33;
 $color-one: #0097e6;
@@ -183,36 +189,108 @@ li {
 
 /*service*/
 
-.container i {
-    font-size: 30px;
-    background: $color-main;
-    width: 60px;
-    height: 60px;
+.row i {
+    font-size: 60px;
+    width: 50%;
+    height: 50%;
     line-height: 60px;
     border-radius: 50%;
+    color: $color-gold;
+    text-align: center;
 }
 
-.page-subtitle {
+.subtitle {
     color: $color-light;
     font-size: 18px;
-    margin: 48px 0 0 0;
+    margin: 0;
+    color: #000;
+    text-align: center;
 }
 
-.page-title::after {
-    position: absolute;
-    content: '';
-    bottom: -24px;
-    left: 50%;
-    width: 100px;
-    height: 10px;
-    transform: translateX(-50%);
-    background: $color-main;
-}
-
-.page-title {
+.title {
     color: $color-light;
-    font-size: 60px;
-    margin: 48px 0 0 0;
+    font-size: 12px;
+    margin: 12px;
     position: relative;
     font-family: $font-header;
+    color: #000;
+    text-align: center;
+    
+}
+.title-cent{
+    text-align: center;
+    h1{
+        color: #000000;
+        font-size: 18px;   
+    }
+    H2 {
+        color: #666666;
+        font-size: 14px;
+    }
+
+}
+/*Galeria*/
+.bg-color{
+    height: 100vh;
+    max-width: 100%;
+    background-color: #cccccc;
+    background-size: auto;
+    padding: 60px 15px; 
+}
+.element {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    border-radius: 0;
+    background-position: center;
+    background-size: cover;
+    background-color: $color-light;
+    padding: 0;
+        img{
+            height: 300px;
+            width: 300px;  
+            padding: 0;
+        }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    margin: auto;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;   
+}
+.flex-1 {
+    flex: 1;    
+}
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.text-img {
+    text-align: center;
+    h1{
+        color: #000000;
+        font-size: 18px;   
+    }
+    h2 {
+        color: #666666;
+        font-size: 14px;
+    }
+}
+.box {
+    flex: 0 0 50%;
+    height: 50%;
+    position: relative;
+    margin-bottom: 25px;
+    margin: auto;
+    width: 1140px;
+    
 }

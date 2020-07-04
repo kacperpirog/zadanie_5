@@ -1,4 +1,28 @@
 /* Variables */
+.img-1 {
+  background-image: url("/images/img-1.jpg");
+}
+
+.img-2 {
+  background-image: url("/images/img-2.jpg");
+}
+
+.img-3 {
+  background-image: url("/images/img-3.jpg");
+}
+
+.img-4 {
+  background-image: url("/images/img-4.jpg");
+}
+
+.img-5 {
+  background-image: url("/images/img-5.jpg");
+}
+
+.img-6 {
+  background-image: url("/images/img-6.jpg");
+}
+
 /* Global */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -179,5 +203,132 @@ li :hover {
   max-width: 700px;
   font-size: 36px;
   font-family: "Signika", sans-serif;
+}
+
+/*service*/
+.row i {
+  font-size: 60px;
+  width: 50%;
+  height: 50%;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #ffcc33;
+  text-align: center;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 12px;
+  margin: 12px;
+  position: relative;
+  font-family: "Signika", sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+.title-cent {
+  text-align: center;
+}
+
+.title-cent h1 {
+  color: #000000;
+  font-size: 18px;
+}
+
+.title-cent H2 {
+  color: #666666;
+  font-size: 14px;
+}
+
+/*Galeria*/
+.bg-color {
+  height: 100vh;
+  max-width: 100%;
+  background-color: #cccccc;
+  background-size: auto;
+  padding: 60px 15px;
+}
+
+.element {
+  height: 300px;
+  width: 300px;
+  margin: 0;
+  border-radius: 0;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  padding: 0;
+}
+
+.element img {
+  height: 300px;
+  width: 300px;
+  padding: 0;
+}
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 300px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: .25rem;
+  margin: auto;
+}
+
+.flex-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-1 {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.flex-column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.text-img {
+  text-align: center;
+}
+
+.text-img h1 {
+  color: #000000;
+  font-size: 18px;
+}
+
+.text-img h2 {
+  color: #666666;
+  font-size: 14px;
+}
+
+.box {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  height: 50%;
+  position: relative;
+  margin-bottom: 25px;
+  margin: auto;
+  width: 1140px;
 }
 /*# sourceMappingURL=style.css.map */
