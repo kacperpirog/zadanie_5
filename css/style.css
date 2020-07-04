@@ -331,4 +331,36 @@ li :hover {
   margin: auto;
   width: 1140px;
 }
+
+/*footer*/
+.footer {
+  width: 1140px;
+  font-size: 0;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+}
+
+.footer i {
+  font-size: 15px;
+  background: #ff5252;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+}
+
+.text-footer {
+  -ms-flex-pack: left;
+      justify-content: left;
+  color: #2c2c54;
+  font-size: 15px;
+  margin: 0;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */

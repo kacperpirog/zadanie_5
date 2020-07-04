@@ -294,3 +294,33 @@ li {
     width: 1140px;
     
 }
+
+/*footer*/
+
+.footer {
+    width: 1140px;
+    font-size: 0; 
+    padding-bottom: 48px;
+    padding-top: 48px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer i {
+    font-size: 15px;
+    background: $color-three;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: $color-light;
+    margin: auto;
+}
+.text-footer {
+    justify-content: left;
+    color: $color-four;
+    font-size: 15px;
+    margin: 0;
+    text-align: left;
+}
